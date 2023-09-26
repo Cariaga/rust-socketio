@@ -43,5 +43,5 @@ fn main() {
         .emit_with_ack("test", json_payload, Duration::from_secs(2), ack_callback)
         .expect("Server unreachable");
 
-    socket.disconnect().expect("Disconnect failed")
+    socket.disconnect().expect("Disconnect failed");
 }
